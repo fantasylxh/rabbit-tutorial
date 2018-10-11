@@ -1,2 +1,2 @@
 # rabbit-tutorial
-rabbit初学者点滴
+RabbitMQ+PHP 初学教程
