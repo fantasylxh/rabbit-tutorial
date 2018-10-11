@@ -1,2 +1,2 @@
 # rabbit-tutorial
-RabbitMQ+PHP 初学教程
+RabbitMQ+PHP 初级教程
