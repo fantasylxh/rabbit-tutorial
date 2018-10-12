@@ -17,7 +17,7 @@ $msg = new AMQPMessage($data);
 
 $channel->basic_publish($msg, 'direct_logs', $severity);
 
-echo " [x] Sent ",$severity,':',$data," \n";
+echo " [x] 发送 ",$severity,':',$data," \n";
 
 $channel->close();
 $connection->close();
