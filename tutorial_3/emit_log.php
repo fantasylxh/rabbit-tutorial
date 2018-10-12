@@ -7,7 +7,7 @@ $channel = $connection->channel();
 $channel->exchange_declare('logs', 'fanout', false, false, false);
 $data = implode(' ', array_slice($argv, 1));
 if (empty($data)) {
-    $data = "好消息: 荒野大镖客2发布啦!";
+    $data = "好消息: 荒野大镖客2发布啦!".uniqid();
 }
 $msg = new AMQPMessage($data);
 $channel->basic_publish($msg, 'logs');
